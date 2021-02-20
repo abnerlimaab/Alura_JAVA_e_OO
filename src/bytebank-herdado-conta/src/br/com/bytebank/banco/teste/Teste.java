@@ -5,29 +5,29 @@ import br.com.bytebank.banco.modelo.*;
 public class Teste {   
     public static void main(String[] args) throws SaldoInsuficienteException {
 
-        //System.out.println("x");
-        //System.out.println(3);
-        //System.out.println(false);
+        /*int[] idades = new int[5];
 
-        ContaCorrente cc = new ContaCorrente(22, 33);
-        Object cp = new ContaPoupanca(33, 22);
+        for (int i =0; i < idades.length; i++) {
+            idades[i] = i * i;
+        }
 
-        System.out.println(cc);
-        System.out.println(cp);
+        for (int i =0; i < idades.length; i++) {
+            System.out.println(idades[i]);
+        } */
 
-        println(cc);
+        // Testando Arrays
 
-    }
+        GuardadorDeContas guardador = new GuardadorDeContas();
+        Conta cc = new ContaCorrente(22, 11);
+        guardador.adiciona(cc);
 
-    static void println() {
-    }
+        Conta cc2 = new ContaCorrente(22, 22);
+        guardador.adiciona(cc2);
 
-    static void println(int a) {
-    }
+        int tamanho = guardador.getQuantidadeDeElementos();
+        System.out.println(tamanho);
 
-    static void println(boolean valor) {
-    }
-
-    static void println(Object referencia) {
+        Conta ref = guardador.getReferencia(0);
+        System.out.println(ref.getNumero());
     }
 }
