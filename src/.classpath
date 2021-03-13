@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="teste-de-unidade/src/|bytebank-herdado/src/|java-pilha/src/|bytebank-herdado-conta/src/|java-io/src/|gerenciador-de-cursos/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="bytebank-herdado-conta/src"/>
+	<classpathentry kind="src" path="bytebank-herdado/src"/>
+	<classpathentry kind="src" path="gerenciador-de-cursos/src"/>
+	<classpathentry kind="src" path="java-io/src"/>
+	<classpathentry kind="src" path="java-pilha/src"/>
+	<classpathentry kind="src" path="teste-de-unidade/src"/>
+	<classpathentry kind="output" path="teste-de-unidade/bin"/>
+</classpath>
